@@ -7,7 +7,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.375rem;
   line-height: 1.6;
   letter-spacing: 1px;
   color: rgb(34, 34, 34);
@@ -106,11 +105,16 @@ h1 {
 
 .nav__link {
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-.nav__link:focus,
-.nav__link:hover {
+.nav__link:hover,
+.nav__link:focus {
+  text-decoration: underline;
+}
 
+.nav__link:visited {
+  color: slategray;
 }
 
 .footer {
@@ -126,11 +130,21 @@ h1 {
   margin: 0 auto;
   border: 1px solid black;
   background: black;
-  margin: 2em auto;
+  margin: 0.5em auto;
 }
 
 @media screen and (min-width: 800px) {
-  .nav__list-item + .nav__list-item  {
-    margin-left: 1.5em;
+
+  body {
+    font-size: 1.375rem;
   }
+
+  .nav__list-item + .nav__list-item  {
+    margin-left: 2em;
+  }
+
+  .divider {
+    margin: 2em auto;
+  }
+
 }
