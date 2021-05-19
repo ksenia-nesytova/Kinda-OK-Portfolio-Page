@@ -18,6 +18,13 @@ body {
   text-align: center;
 }
 
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1585399000684-d2f72660f092?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .text-decorative {
   border: 2px solid black;
   padding: 0.3em 0.6em;
