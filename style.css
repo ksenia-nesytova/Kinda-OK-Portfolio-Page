@@ -48,6 +48,10 @@ body {
   min-height: 100vh;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
 .img-background {
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,7 +84,7 @@ body {
 }
 
 .section__title {
-
+  text-transform: uppercase;
 }
 
 .nav {
@@ -88,15 +92,20 @@ body {
 }
 
 .nav_list {
-
+  display: flex;
+  justify-content: center;
 }
 
 .nav__list-item {
   list-style: none;
 }
 
-.nav__link {
+.nav__list-item + .nav__list-item  {
+  margin-left: 1.5em;
+}
 
+.nav__link {
+  text-transform: uppercase;
 }
 
 .nav__link:focus,
@@ -117,4 +126,5 @@ body {
   margin: 0 auto;
   border: 1px solid black;
   background: black;
+  margin: 2em auto;
 }
