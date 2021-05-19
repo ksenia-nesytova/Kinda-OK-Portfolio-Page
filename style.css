@@ -101,7 +101,7 @@ h1 {
 }
 
 .nav__list-item + .nav__list-item  {
-  margin-left: 1.5em;
+  margin-left: 0.5em;
 }
 
 .nav__link {
@@ -127,4 +127,10 @@ h1 {
   border: 1px solid black;
   background: black;
   margin: 2em auto;
+}
+
+@media screen and (min-width: 800px) {
+  .nav__list-item + .nav__list-item  {
+    margin-left: 1.5em;
+  }
 }
