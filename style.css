@@ -45,6 +45,11 @@ body {
 
 }
 
+.nav__link:focus,
+.nav__link:hover {
+
+}
+
 .footer {
 
 }
