@@ -170,9 +170,14 @@ h1 {
 
 }
 
-.divider {
-  width: 3em;
-  border: 1px solid black;
+
+h1::after,
+h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 2em;
+  margin: 0.5em auto 1em;
   background: black;
   opacity: 0.6;
 }
