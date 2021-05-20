@@ -90,7 +90,7 @@ h1 {
 .text-decorative {
   border: 4px solid black;
   border-radius: 3px;
-  padding: 0.3em 0.6em;
+  padding: 0.3em 0.9em;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 3px;
@@ -158,10 +158,17 @@ h1 {
 }
 
 .btn-ghost {
+  display: inline-block;
   border: 2px solid black;
   text-decoration: none;
+  font-size: 0.8em;
   color: black;
+  transition: transform ease-in-out .2s;
   }
+
+.btn-ghost:hover {
+  transform: scale(1.1);
+}
 
 
 .footer {
@@ -192,10 +199,6 @@ h2::after {
 
   .nav__list-item + .nav__list-item  {
     margin-left: 2em;
-  }
-
-  .divider {
-    margin: 2em auto;
   }
 
 }
