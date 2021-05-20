@@ -140,15 +140,20 @@ h1 {
 }
 
 .portfolio__item {
-  background: orange;
+  background: black;
+  overflow: hidden;
 }
 
 .portfolio__img {
   object-fit: cover;
   width: 100%;
   min-height: 250px;
+  transition: transform opacity 250ms linear;
 }
-
+.portfolio__img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
 
 .btn-ghost {
   border: 2px solid black;
