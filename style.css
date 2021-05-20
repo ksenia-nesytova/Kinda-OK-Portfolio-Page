@@ -5,11 +5,24 @@
   scroll-behavior: smooth;
 }
 
+
+/* GENERAL */
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   letter-spacing: 1px;
   color: rgb(34, 34, 34);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2 {
+  line-height: 1.1;
+  margin: 0;
 }
 
 .container {
@@ -86,6 +99,9 @@ h1 {
   text-transform: uppercase;
 }
 
+
+
+/* OUR WORK */
 .nav {
 
 }
@@ -116,6 +132,17 @@ h1 {
 .nav__link:visited {
   color: slategray;
 }
+
+.portfolio {
+
+}
+
+.portfolio__img {}
+
+.portfolio__item {}
+
+
+
 
 .footer {
 
