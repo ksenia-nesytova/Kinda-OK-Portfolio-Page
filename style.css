@@ -30,7 +30,7 @@ h2 {
   width: 1000px;
   margin: 0 auto;
   text-align: center;
-  padding: 10%;
+  padding: 5em 2em;
 }
 
 .arrow-down {
@@ -135,15 +135,26 @@ h1 {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns:repeat(3, 1fr);
+  grid-gap: 5px;
 }
 
-.portfolio__img {}
+.portfolio__item {
+  background: orange;
+}
 
-.portfolio__item {}
+.portfolio__img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 250px;
+}
 
 
+.btn-ghost {
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  }
 
 
 .footer {
