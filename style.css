@@ -149,7 +149,7 @@ h1 {
 .portfolio__img {
   object-fit: cover;
   width: 100%;
-  min-height: 250px;
+  min-height: 130px;
   transition: transform opacity 250ms linear;
 }
 .portfolio__img:hover {
@@ -224,6 +224,10 @@ h2::after {
 
   .nav__list-item + .nav__list-item  {
     margin-left: 2em;
+  }
+
+  .portfolio__img {
+    min-height: 250px;
   }
 
   .social-list {
