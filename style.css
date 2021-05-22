@@ -75,16 +75,18 @@ h2::after {
   background: black;
   transform: rotate(90deg);
 }
+
+.nav-open {
+  transform: translateX(0);
+  opacity: 0;
+}
+
 .nav {
   position: fixed;
   background: black; /* FIXME:  */
   z-index: 100;
   top: 0;
   left: 0;
-}
-
-.nav-open {
-  opacity: 0;
 }
 
 .nav_list {
@@ -109,10 +111,7 @@ h2::after {
 .nav__link:visited {
   color: slategray;
 }
-.nav-toggle {
-  z-index: 1000;
 
-}
 
 
 .hero {
