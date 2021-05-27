@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- HERO -->
-<div class= "hero img-background flex">
+<div class= "hero img-background flex flex--column">
   <section class="container ">
     <h1>We're great. Kinda.</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -139,28 +139,37 @@
 </div>
 
   <!-- CONTACTS -->
-  <section class="container">
-    <h2 class="section__title">RETURN OUR CALLS</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div>
-      <h3>Our location</h3>
-      <p>
-        Address: Bol'shaya Nizhegorodskaya Ulitsa, 67, Vladimir, Vladimir Oblast, 600020
-        Hours: 8AM-5PM
-        Phone: 8 (492) 232-40-68
+  <div>
+    <section class="container">
+      <h2 class="section__title">RETURN OUR CALLS</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </section>
+      <div class="flex location-contact container">
+        <section class="section__location">
+          <h3>Our location</h3>
+          <p>
+            Address: Bol'shaya Nizhegorodskaya Ulitsa, 67, Vladimir, Vladimir Oblast, 600020
+            Hours: 8AM-5PM
+            Phone: 8 (492) 232-40-68
+          </p>
+      </section>
+      <section class="section__form">
+        <form class="" action="index.html" method="post">
+          <input type="text" name="Name" value="" placeholder="Name" class="form__text-input">
+          <input type="email" name="" value="" placeholder="Email" class="form__text-input">
+          <input type="text" name="" value="" placeholder="Message" class="form__text-input">
+        </form>
+        <button type="submit" name="send" class="btn-default btn-ghost text-decorative">Send</button>
+      </section>
+      </div>
+
+  <div>
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">
+        1789 PretentiousName All rights reserved.
       </p>
-      <form class="" action="index.html" method="post">
-        <input type="text" name="Name" value="" placeholder="Name">
-        <input type="email" name="" value="" placeholder="Email">
-        <input type="text" name="" value="" placeholder="Message">
-      </form>
-      <button type="submit" name="send" class="btn-ghost text-decorative">Send</button>
-    </div>
-  </section>
-  <footer class="footer container">
-    <p class="copyright">
-      1789 PretentiousName All rights reserved.
-    </p>
+  </div>
   </footer>
   </body>
   <script type="text/javascript" src="./hamburger.js">
