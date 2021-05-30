@@ -28,6 +28,10 @@ img{
     max-width: 100%;
 }
 
+input {
+  border-radius: 3px;
+}
+
 /* Utility */
 
 .container {
