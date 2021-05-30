@@ -20,6 +20,7 @@ body {
   line-height: 1.6;
   letter-spacing: 1px;
   color: rgb(34, 34, 34);
+
 }
 
 img{
@@ -48,16 +49,19 @@ img{
 p {
   max-width: 50ch;
   text-align: justify;
-
-}
-
-.container {
-  max-width: 80%;
-  width: 1000px;
   margin: 0 auto;
-  text-align: center;
-  padding: 5em 2em;
+
 }
+
+
+
+section {
+    padding: 5em 2em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 
 /* Headings */
 h1,
@@ -126,11 +130,16 @@ h2::after {
   color: slategray;
 }
 
-
-
 .hero {
   background-image: url('https://images.unsplash.com/photo-1585399000684-d2f72660f092?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80');
   min-height: 100vh;
+  color: white;
+}
+
+
+.hero p {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .arrow-down {
@@ -149,6 +158,7 @@ h2::after {
 
 .img-decorative {
   padding: 10%;
+
 }
 
 .img-decorative__1 {
@@ -171,6 +181,8 @@ h2::after {
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
+  color: #ff6431;
+  text-shadow: 2px -1px 2px black;
 }
 
 .section__title {
@@ -220,6 +232,8 @@ h2::after {
   font-size: 0.8em;
   color: black;
   transition: transform ease-in-out .2s;
+  margin: 0.4em auto;
+  text-shadow: none;
   }
 
 .btn-ghost:hover {
@@ -260,6 +274,14 @@ h2::after {
   background: #e0e0e0;
 }
 
+
+.section__location {
+  width: 100%;
+}
+
+.section__form {
+  width: 100%;
+}
 /* FORM */
 .form__text-input {
   padding: .25rem;
@@ -267,16 +289,18 @@ h2::after {
   border-width: 0 0 1px 0;
 }
 
-.location-contact {
+.section__contacts {
   flex-direction: column;
 }
+
 
 .footer {
   background: #202020;
 }
 
 .copyright {
-
+  font-size: 0.4em;
+  color: white;
 }
 
 
@@ -287,6 +311,14 @@ h2::after {
 
   body {
     font-size: 1.375rem;
+  }
+
+  .container {
+    max-width: 80%;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5em 2em;
   }
 
   .nav__list-item + .nav__list-item  {
@@ -311,7 +343,7 @@ h2::after {
       opacity: 0.6;
   }
 
-  .location-contact {
+  .section__contacts {
     flex-direction: row;
   }
 
@@ -319,4 +351,7 @@ h2::after {
     border: 4px solid black;
     letter-spacing: 3px;
   }
+
+
+
 }
