@@ -37,6 +37,7 @@ img{
   text-align: center;
   padding: 5em 2em;
 }
+
 .center {
   text-align: center;
 }
@@ -319,6 +320,8 @@ h2::after {
 
 .section__form {
   background: #e0e0e0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -398,8 +401,9 @@ h2::after {
 
   }
 
-  .section__form {
 
+  .section__form {
+    display:  block;
   }
 
   .text-decorative {
