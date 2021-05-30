@@ -158,11 +158,11 @@ h2::after {
 
 .img-decorative {
   padding: 10%;
-
 }
 
+
 .img-decorative__1 {
-  background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2004&q=80');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2004&q=80');
 }
 .img-decorative__2 {
   background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80');
@@ -266,6 +266,24 @@ h2::after {
   opacity: 1.3;
 }
 
+
+/* EMPLOYEES CARDS */
+.card {
+  background: #202020;
+  color: white;
+  background-size: cover;
+  padding: 8rem 0 0;
+}
+
+#card-1 {
+  background-image: url("https://images.unsplash.com/photo-1573007974656-b958089e9f7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+}
+
+.card-title {}
+
+.card-body {}
+
+
 .section__location{
   background: #f1eff0;
 }
@@ -347,11 +365,27 @@ h2::after {
     flex-direction: row;
   }
 
-  .text-decorative {
-    border: 4px solid black;
-    letter-spacing: 3px;
+  .section__location {
+
   }
 
+  .section__form {
+
+  }
+
+  .text-decorative {
+    border: 4px solid white;
+    letter-spacing: 3px;
+    color: white;
+  }
+
+  /* .container {
+    max-width: 80%;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5em 2em;
+  } */
 
 
 }
