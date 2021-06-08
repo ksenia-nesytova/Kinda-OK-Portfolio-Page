@@ -1,3 +1,10 @@
+:root {
+  --dark-bg-color: #202020;
+  --social-bg-color: #f4f4f4;
+  --location-bg-color: #f2f2f2;
+  --form-bg-color: #e4e4e4;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,7 +44,7 @@ input {
 
 .container {
   max-width: 80%;
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
   text-align: center;
   padding: 5em 2em;
@@ -139,6 +146,9 @@ h1::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -165,7 +175,7 @@ h1::after {
   text-transform: uppercase;
   font-size: 0.7em;
   font-weight: 800;
-  margin: 0.4em auto;
+  margin: 0.8em auto;
   padding: 0.25em 1em;
   text-shadow: none;
   transition: transform ease-in-out .2s;
@@ -254,7 +264,8 @@ h1::after {
 /* SOCIAL */
 
 .section__social {
-  background: #f2f2f4;
+  /* background: #f2f2f4; */
+  background: var(--social-bg-color)
 }
 
 .social-list {
@@ -282,7 +293,7 @@ h1::after {
 
 
 /* EMPLOYEES CARDS */
-.employees {
+/* .employees {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -290,20 +301,29 @@ h1::after {
   column-gap: 1em;
   margin-top: 2.5em;
   row-gap: .5em;
+} */
+
+.employees {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: .5em;
+  margin-top: 2.5em;
+  justify-content: center;
+  text-align: center;
+
 }
 
 .card {
   display: flex;
   flex-direction: column;
-
   opacity: 0.5;
   color: white;
-  background-size: cover;
-  background-position: center;
-  padding: 6rem 3rem 2rem;
   justify-content: flex-end;
   text-decoration: none;
-  min-width: 100%;
+  min-width: 20%;
+  min-height: 170px;
+  /* margin: 0 auto */
+  /* min-width: 100%; */
 }
 
 .card:hover {
@@ -316,32 +336,35 @@ h1::after {
 }
 
 
-
-.card-title {
-  font-size: 1.2rem;
-  font-weight: 800;
-}
-
-.card-body {
-  font-size: 0.9rem;
-}
-
 .card-inner {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   opacity: 0;
+
 }
 
 
 
+.card-title {
+  font-size: .8em;
+  font-weight: 800;
+}
+
+.card-body {
+  font-size: 0.5em;
+}
+
+
+/* #card-1 {
+  background-image: url("https://images.unsplash.com/photo-1573007974656-b958089e9f7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+} */
 
 #card-1 {
-  background-image: url("https://images.unsplash.com/photo-1573007974656-b958089e9f7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-image: url("https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
 }
 
 .card__hiring {
-  display: inline-block;
   color: black;
   background: none;
   opacity: 1;
@@ -355,26 +378,24 @@ h1::after {
 }
 
 .section__location{
-  background: #f1eff0;
+  background: var(--location-bg-color);
 }
 
 .section__form {
-  background: #e0e0e0;
+  background: var(--form-bg-color);
   display: flex;
   flex-wrap: wrap;
 }
 
 
-.section__location {
-  width: 100%;
-}
-
+.section__location,
 .section__form {
   width: 100%;
 }
+
 /* FORM */
 .form__text-input {
-  padding: .25rem;
+  padding: .25em;
   margin-bottom: 1em;
   border-width: 0 0 1px 0;
 }
@@ -387,7 +408,7 @@ h1::after {
 
 
 .footer {
-  background: #202020;
+  background: var(--dark-bg-color);
 }
 
 .copyright {
@@ -403,14 +424,6 @@ h1::after {
 
   body {
     font-size: 1.375rem;
-  }
-
-  .container {
-    max-width: 80%;
-    width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 5em 2em;
   }
 
   .nav__list-item + .nav__list-item  {
@@ -460,6 +473,19 @@ h1::after {
   }
 
 
+  .employees {
+    display: grid;
+    grid-row-gap: .5em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "card card card"
+                          "hiring hiring hiring";
+
+  }
+
+  .card__hiring {
+    grid-column: 1 / span 3;
+  }
+
 
 }
 
@@ -469,16 +495,20 @@ h1::after {
     font-size: 1.5rem;
   }
 
+  .employees {
+    grid-row: 1;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "card card card card";
+  }
+
+  .card__hiring {
+      grid-column: none;
+      grid-column-start: 4;
+  }
+
 
   .card {
     min-width: 20%;
-      }
-
-  .card__hiring {
-      align-content: center;
-    }
-
-  .employees {
-        flex-wrap: nowrap;
-    }
+    min-height: 270px;
+  }
 }
