@@ -236,8 +236,8 @@ h1::after {
 
 .portfolio {
   display: grid;
-  grid-template-columns:repeat(3, 1fr);
-  grid-gap: 5px;
+  grid-template-columns:repeat(2, 1fr);
+  grid-gap: .5em;
 }
 
 .portfolio__list-item + .portfolio__list-item {
@@ -251,8 +251,6 @@ h1::after {
 
 .portfolio__img {
   object-fit: cover;
-  width: 100%;
-  min-height: 130px;
   transition: transform opacity 250ms linear;
 }
 .portfolio__img:hover {
@@ -293,19 +291,9 @@ h1::after {
 
 
 /* EMPLOYEES CARDS */
-/* .employees {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 1em;
-  margin-top: 2.5em;
-  row-gap: .5em;
-} */
-
 .employees {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: .5em;
   margin-top: 2.5em;
   justify-content: center;
@@ -430,6 +418,10 @@ h1::after {
     margin-left: 2em;
   }
 
+  .portfolio {
+    grid-template-columns:repeat(3, 1fr);
+  }
+
   .portfolio__img {
     min-height: 250px;
   }
@@ -493,6 +485,11 @@ h1::after {
 
   body {
     font-size: 1.5rem;
+  }
+
+
+  .portfolio__img {
+    min-height: 350px;
   }
 
   .employees {
