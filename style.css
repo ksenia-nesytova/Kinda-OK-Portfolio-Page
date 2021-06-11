@@ -397,6 +397,24 @@ h1::after {
   padding: .25em;
   margin-bottom: 1em;
   border-width: 0 0 1px 0;
+  border-radius: 0;
+}
+
+.form__text-input[name="Name"],
+.form__text-input[name="Message"] {
+  align-items: flex-start;
+}
+.form__text-input[name="Email"] {
+  align-items: flex-end;
+}
+
+.form__text-input[name="Name"],
+.form__text-input[name="Email"] {
+  width: 40%;
+}
+
+.form__text-input[name="Message"] {
+  width: 80%;
 }
 
 .section__contacts {
