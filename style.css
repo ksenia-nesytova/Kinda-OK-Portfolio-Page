@@ -396,6 +396,7 @@ h1::after {
 .form__text-input {
   padding: .25em;
   margin-bottom: 1em;
+  border: solid var(--dark-bg-color);
   border-width: 0 0 1px 0;
   border-radius: 0;
 }
